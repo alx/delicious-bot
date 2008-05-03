@@ -1,0 +1,35 @@
+h1. About
+
+Because when I see a good link, my main pleasure is to send it to as many friends as possible on IM, here is a simple jabber bot I could use to also save these links to my delicious account:
+
+It uses <a href="http://socket7.net/software/jabber-bot">jabber-bot</a> and <a href="http://rdelicious.rubyforge.org">rdelicious</a> gem for ruby.
+
+h1. Configuration
+
+@gem install jabber-bot rdelicious@
+
+Edit _config.yml_ with the data for your bot to connect on jabber server and delicious account.
+
+* *jabber_id*: the id of your bot to connect to jabber network
+* *jabber_password*: the password of your bot to connect to jabber network
+* *jabber_master*: the master of your bot, generally you, put your jabber email here
+* *delicious_login*: the login of the delicious account where to save bookmarks
+* *delicious_password*: the password of the delicious account where to save bookmarks
+
+h1. Run
+
+@ruby delicious-bot.rb@
+
+h1. Save bookmard
+
+Syntax:
+
+@bookmark url description@
+
+Example:
+
+@bookmark http://github.com/alx/delicious-bot/tree/master A new jabber bot for delicious@
+
+Alias:
+
+@b http://github.com/alx/delicious-bot/tree/master A new jabber bot for delicious@
